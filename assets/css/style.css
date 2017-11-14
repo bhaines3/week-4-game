@@ -1,0 +1,24 @@
+body {
+
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/135/905/non_2x/free-jewel-vector-background.jpg);
+    background-color: rgba(138, 130, 130, 0.7);
+}
+
+.card-header {
+    background-color: rgb(15, 160, 141);
+}
+
+.card-body {
+   background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/circles-and-roundabouts.png);
+   margin-left: 10px;
+}
+
+.img-fluid {
+    height: 70%;
+    width: 70%;
+}
+
+.gem-img {
+    height: 100%;
+    width: 100%;
+}

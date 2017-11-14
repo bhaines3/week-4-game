@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel ="stylesheet" type="text/css" href="assets\css\style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+	<title> Brandon's Crystal Collector Game</title>
+</head>
+<body>
+
+        <div class="container">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                        <div class="card mt-4">
+                            <div class="card-header text-center">
+                                <h1 class="card-title" "transbox">Brandon's Crystal Collector Game!</h1>
+                                <p class="card-subtitle" "transbox">© Copyright 2017 Brandon Haines</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" src="assets/images/pink-panther.jpg" alt="Pink Panther Picture"/>
+                                    </div>
+                                    <div class="col-8">
+                                        <div id="instructions">
+                                            <div class="row">
+                                                <h5>Instructions:</h5>
+                                            </div>
+                                            <div class="row">
+                                                <p> You will be given a random number at the start of the game.</p>
+                                            </div>
+                                            <div class="row">
+                                                <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                                            </div>
+                                            <div class="row">
+                                                <p> You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. </p>
+                                            </div>
+                                            <div class="row">
+                                                <p> Each time the game starts, the game will change the values of each crystal.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card mt-4">
+                                <div class="card-header text-center">
+                                    <h4 class="card-title scoreboard">Scoreboard</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <div class="row">
+                                                <p id="targetnum">Try to get this number:</p>
+                                            </div>
+                                            <div class="row">
+                                                <p><span class="value"></span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="row wins">
+                                                <p>Wins:</p>
+                                            </div>
+                                            <div class="row losses">
+                                                <p>Losses:</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-4">
+                                <div class="card mt-4">
+                                    <div class="card-header text-center">
+                                        <h4 class="card-title crystal-type">Crystal Types</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="row text-center">
+                                                    <img src="assets/images/red-crystal.png" class="gem-img" id="red-gem"></img>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="row">
+                                                    <img src="assets/images/pink-crystal.png" class="gem-img" id="pink-gem"></img>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="row">
+                                                    <img src="assets/images/orange-crystal.png" class="gem-img" id="orange-gem"></img>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="row">
+                                                    <img src="assets/images/purple-crystal.png" class="gem-img" id="purple-gem"></img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                        </div>
+                        <div class="col-4">
+                                <div class="card mt-4">
+                                    <div class="card-header text-center">
+                                        <h4 class="card-title total-score">Total Score</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+    
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <p id="user-score">Your current score is:</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p><span class="value"></span></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
+    
+
+    <!-- <div id = "wrapper">
+
+        <h1><span>Crystal Collector!<span></h1>
+
+	<div id="instructions">
+		<p> You will be given a random number at the start of the game.</p>
+		<p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p> You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. </p>
+		<p> Each time the game starts, the game will change the values of each crystal.</p>
+	</div>
+
+	<div class = "container">
+		<div id="guessingNumber">
+			<h2>Number to Guess: <span class="value"></span></h2> 	
+		</div>
+
+		<div id="scoreboard">
+			<h3><span id="status"></span></h3>
+			<h3>Wins: <span id="win"></span></h3>
+			<h3>Losses: <span id="loss"></span> </h3>
+		</div>
+	</div>
+
+	
+	<div id="crystals"></div>
+
+	<div id ="totalScore">
+		<h2 id = "yts">Your Total Score is: <span id ="yourScore">0</span></h2>
+		
+	</div>
+
+</div> -->
+
+
+<!-- adding jQuery -->
+
+
+</body>
+</html>
