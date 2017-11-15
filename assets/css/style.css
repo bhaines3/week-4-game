@@ -22,3 +22,16 @@ body {
     height: 100%;
     width: 100%;
 }
+
+#yourScore {
+    font-weight: bolder;
+}
+
+.value, .wins, .losses {
+    font-weight: bolder;
+}
+
+.status {
+    font-weight: bolder;
+    color: rgb(253, 114, 0);
+}
