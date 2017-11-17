@@ -6,11 +6,15 @@ $(document).ready(function() {
             var wins = 0;
             var losses = 0;
             var targetNum;
+            var audioTheme = new Audio("assets/images/pink-panther-theme.wav")
+            var audio = new Audio("http://inspectorclouseau.com/sounds/fltgood.wav");
+            var audio1 = new Audio("http://www.wavsource.com/snds_2017-09-17_1751672946049674/movies/pink_panther/pp_not_correct.wav");
             $(".win").text(wins);
             $(".loss").text(losses);
     
             newCrystals();
             newGame();
+            audioTheme.play();
     
             function newCrystals () {
                 $(".crystals").empty();
@@ -74,6 +78,7 @@ $(document).ready(function() {
                 console.log(wins)
                 newCrystals();
                 newGame();
+                audio.play();
     
               } else if ( counter > targetNum){
                 $(".status").text("You lost!")
@@ -83,6 +88,7 @@ $(document).ready(function() {
                 $(".crystals").empty();
                 newCrystals();
                 newGame();
+                audio1.play();
               }
         });
 });
