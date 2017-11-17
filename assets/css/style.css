@@ -14,7 +14,7 @@ body {
 }
 
 .img-fluid {
-    height: 70%;
+    height: 100%;
     width: 70%;
 }
 
@@ -32,6 +32,24 @@ body {
 }
 
 .status {
+    font-size: 20px;
     font-weight: bolder;
     color: rgb(253, 114, 0);
+    padding-bottom: 5px;
+}
+
+h1, h4 {
+    color: rgb(77, 75, 75);
+}
+
+.copyright {
+    color: beige;
+}
+
+.empty {
+    padding-bottom: 23px;
+}
+
+#instructions {
+    padding-right: 20px;
 }
